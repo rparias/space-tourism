@@ -1,3 +1,44 @@
+# Space tourism
+
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+
+### Screenshot
+
+<img alt="Preview" src="./src/assets/screenshots/preview.jpg"  width=600 align=center>
+
+### Links
+
+- Solution URL: [GitHub](https://github.com/rparias/space-tourism)
+- Live Site URL: [GitHub Pages](https://rparias.github.io/space-tourism/)
+
+### Built with
+
+- Semantic HTML5 markup
+- React
+- React Testing Library
+- Styled Components
+
+### What I learned
+
+Reinforcing css
+
+## Author
+
+- Frontend Mentor - [@rparias](https://www.frontendmentor.io/profile/rparias)
+- Twitter - [@rparias\_](https://twitter.com/rparias_)
+
+## Acknowledgments
+
+Curious about how improve the functionality of background-size property.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
