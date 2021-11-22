@@ -59,6 +59,39 @@ const GlobalStyle = createGlobalStyle`
       scroll-behavior: auto !important;
     }
   }
+
+  /* ------------------- */
+  /* Utility classes     */
+  /* ------------------- */
+
+  .flex {
+      display: flex;
+      gap: var(--gap, 1rem);
+  }
+
+  .grid {
+      display: grid;
+      gap: var(--gap, 1rem);
+  }
+
+  .container {
+      padding-inline: 2em; /* padding at left and right */
+      margin-inline: auto; /* margin at left and right */
+      max-width: 80rem;
+  }
+
+  /* screen reader only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }
 `
 
 export default GlobalStyle
