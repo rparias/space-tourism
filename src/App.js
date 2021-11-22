@@ -1,11 +1,12 @@
 import React from 'react'
 import GlobalStyle from './globalStyles'
+import DesignSystem from './DesignSystem'
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <h1>Hello World</h1>
+      <DesignSystem />
     </>
   )
 }

@@ -2,6 +2,16 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   /* ------------------- */
+  /* Custom properties   */
+  /* ------------------- */
+
+  :root {
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+  }
+
+  /* ------------------- */
   /* Reset               */
   /* ------------------- */
 
@@ -64,20 +74,22 @@ const GlobalStyle = createGlobalStyle`
   /* Utility classes     */
   /* ------------------- */
 
+  /* GENERAL */
+
   .flex {
-      display: flex;
-      gap: var(--gap, 1rem);
+    display: flex;
+    gap: var(--gap, 1rem);
   }
 
   .grid {
-      display: grid;
-      gap: var(--gap, 1rem);
+    display: grid;
+    gap: var(--gap, 1rem);
   }
 
   .container {
-      padding-inline: 2em; /* padding at left and right */
-      margin-inline: auto; /* margin at left and right */
-      max-width: 80rem;
+    padding-inline: 2em; /* padding at left and right */
+    margin-inline: auto; /* margin at left and right */
+    max-width: 80rem;
   }
 
   /* screen reader only */
@@ -92,6 +104,15 @@ const GlobalStyle = createGlobalStyle`
     white-space: nowrap; /* added line */
     border: 0;
   }
+
+  /* COLORS */
+  .bg-dark { background-color: hsl( var(--clr-dark) );}
+  .bg-accent { background-color: hsl( var(--clr-light) );}
+  .bg-white { background-color: hsl( var(--clr-white) );}
+
+  .text-dark { color: hsl( var(--clr-dark) );}
+  .text-accent { color: hsl( var(--clr-light) );}
+  .text-white { color: hsl( var(--clr-white) );}
 `
 
 export default GlobalStyle
