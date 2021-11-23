@@ -115,6 +115,11 @@ const GlobalStyle = createGlobalStyle`
     gap: var(--gap, 1rem);
   }
 
+  .flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+    outline: 1px solid red;
+  }
+
   .container {
     padding-inline: 2em; /* padding at left and right */
     margin-inline: auto; /* margin at left and right */
