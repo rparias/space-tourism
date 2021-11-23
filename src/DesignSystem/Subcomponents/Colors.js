@@ -2,9 +2,9 @@ import React from 'react'
 
 const Colors = () => {
   return (
-    <section id="colors">
-      <h2>
-        <span>01</span> Colors
+    <section id="colors" style={{ margin: '4rem 0' }}>
+      <h2 className="numbered-title">
+        <span>01 </span>Colors
       </h2>
       <div className="flex">
         <div style={{ flexGrow: 1 }}>

@@ -4,7 +4,7 @@ import { Colors, Typography } from './Subcomponents'
 const DesignSystem = () => {
   return (
     <div className="container">
-      <h1>Design system</h1>
+      <h1 className="uppercase">Design system</h1>
       <Colors />
       <Typography />
     </div>
