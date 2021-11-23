@@ -1,5 +1,5 @@
 import React from 'react'
-import { Colors, Typography } from './Subcomponents'
+import { Colors, Typography, InteractiveElements } from './Subcomponents'
 
 const DesignSystem = () => {
   return (
@@ -7,6 +7,7 @@ const DesignSystem = () => {
       <h1 className="uppercase">Design system</h1>
       <Colors />
       <Typography />
+      <InteractiveElements />
     </div>
   )
 }
