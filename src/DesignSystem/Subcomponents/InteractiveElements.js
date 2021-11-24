@@ -1,6 +1,6 @@
 import React from 'react'
 import LargeButton from '../../Components/LargeButton'
-import PrimaryNavigation from '../../Components/PrimaryNavigation'
+import { PrimaryNavigation, SecondaryNavigation } from '../../Components/Navigation'
 
 const InteractiveElements = () => {
   return (
@@ -18,7 +18,9 @@ const InteractiveElements = () => {
           <LargeButton />
         </div>
 
-        <div style={{ marginBottom: '50vh' }}></div>
+        <div style={{ marginBottom: '50vh' }}>
+          <SecondaryNavigation />
+        </div>
       </div>
     </section>
   )

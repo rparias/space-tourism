@@ -1,9 +1,9 @@
 import React from 'react'
-import PrimaryNavigationContainer from './style'
+import NavigationContainer from './style'
 
 const PrimaryNavigation = () => {
   return (
-    <PrimaryNavigationContainer>
+    <NavigationContainer>
       <ul className="primary-navigation underline-indicators flex">
         <li className="active">
           <a className="uppercase text-white letter-spacing-2" href="#/">
@@ -21,7 +21,7 @@ const PrimaryNavigation = () => {
           </a>
         </li>
       </ul>
-    </PrimaryNavigationContainer>
+    </NavigationContainer>
   )
 }
 

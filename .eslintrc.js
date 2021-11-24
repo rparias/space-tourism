@@ -21,6 +21,7 @@ module.exports = {
   plugins: ['react', 'testing-library', 'jest-dom'],
   rules: {
     semi: ['error', 'never'],
-    'space-before-function-paren': ['error', 'never']
+    'space-before-function-paren': ['error', 'never'],
+    'jsx-a11y/role-supports-aria-props': 'off'
   }
 }
