@@ -1,5 +1,6 @@
 import React from 'react'
 import LargeButton from '../../Components/LargeButton'
+import DotIndicators from '../../Components/DotIndicators'
 import { PrimaryNavigation, SecondaryNavigation } from '../../Components/Navigation'
 
 const InteractiveElements = () => {
@@ -18,8 +19,9 @@ const InteractiveElements = () => {
           <LargeButton />
         </div>
 
-        <div style={{ marginBottom: '50vh' }}>
+        <div style={{ marginBottom: '50vh', '--flow-space': '4rem' }}>
           <SecondaryNavigation />
+          <DotIndicators />
         </div>
       </div>
     </section>
