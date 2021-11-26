@@ -1,6 +1,7 @@
 import React from 'react'
 import LargeButton from '../../Components/LargeButton'
 import DotIndicators from '../../Components/DotIndicators'
+import NumberIndicator from '../../Components/NumberIndicator'
 import { PrimaryNavigation, SecondaryNavigation } from '../../Components/Navigation'
 
 const InteractiveElements = () => {
@@ -21,7 +22,16 @@ const InteractiveElements = () => {
 
         <div style={{ marginBottom: '50vh', '--flow-space': '4rem' }}>
           <SecondaryNavigation />
-          <DotIndicators />
+          <div style={{ marginTop: '5rem' }}>
+            <DotIndicators />
+          </div>
+          <div
+            className="flex"
+            style={{ marginTop: '5rem', flexDirection: 'column', width: '40%' }}
+          >
+            <NumberIndicator number="1" active={true} />
+            <NumberIndicator number="2" />
+          </div>
         </div>
       </div>
     </section>
