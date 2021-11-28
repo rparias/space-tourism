@@ -5,6 +5,26 @@ import NumberIndicator from '../../Components/NumberIndicator'
 import { PrimaryNavigation, SecondaryNavigation } from '../../Components/Navigation'
 
 const InteractiveElements = () => {
+  const links = [
+    {
+      text: 'Home',
+      number: '01',
+      to: '#/',
+      active: true
+    },
+    {
+      text: 'Hovered',
+      number: '02',
+      to: '#/',
+      active: false
+    },
+    {
+      text: 'Idle',
+      number: '03',
+      to: '#/',
+      active: false
+    }
+  ]
   return (
     <section id="interactive-elements" style={{ margin: '4rem 0' }}>
       <h2 className="numbered-title">
@@ -12,7 +32,7 @@ const InteractiveElements = () => {
       </h2>
 
       <div>
-        <PrimaryNavigation />
+        <PrimaryNavigation links={links} />
       </div>
 
       <div className="flex">

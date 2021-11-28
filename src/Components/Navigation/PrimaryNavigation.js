@@ -1,28 +1,27 @@
 import React from 'react'
 import NavigationContainer from './style'
+import PrimaryLink from './PrimaryLink'
+import PropTypes from 'prop-types'
 
-const PrimaryNavigation = () => {
+const PrimaryNavigation = ({ links }) => {
   return (
     <NavigationContainer>
       <ul className="primary-navigation underline-indicators flex">
-        <li className="active">
-          <a className="uppercase text-white letter-spacing-2" href="#/">
-            <span>01</span>Active
-          </a>
-        </li>
-        <li>
-          <a className="uppercase text-white letter-spacing-2" href="#/">
-            <span>02</span>Hovered
-          </a>
-        </li>
-        <li>
-          <a className="uppercase text-white letter-spacing-2" href="#/">
-            <span>03</span>Idle
-          </a>
-        </li>
+        {links && links.map((link) => <PrimaryLink key={link.number} {...link} />)}
       </ul>
     </NavigationContainer>
   )
+}
+
+PrimaryNavigation.propTypes = {
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      to: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+      active: PropTypes.bool.isRequired
+    })
+  ).isRequired
 }
 
 export default PrimaryNavigation
