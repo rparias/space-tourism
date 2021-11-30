@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import NavigationContainer from './style'
 import PrimaryLink from './PrimaryLink'
 import PropTypes from 'prop-types'
 
 const PrimaryNavigation = ({ links }) => {
+  const [menuItems, setMenuItems] = useState([])
+
+  useEffect(() => {
+    setMenuItems(links)
+  }, [links])
+
   return (
     <NavigationContainer>
       <ul className="primary-navigation underline-indicators flex">
-        {links && links.map((link) => <PrimaryLink key={link.number} {...link} />)}
+        {menuItems.map((link) => (
+          <PrimaryLink key={link.number} {...link} />
+        ))}
       </ul>
     </NavigationContainer>
   )

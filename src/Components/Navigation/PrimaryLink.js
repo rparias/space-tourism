@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 const PrimaryLink = ({ to, number, text, active }) => {
   return (
     <li className={active ? 'active' : ''}>
-      <a className="uppercase text-white letter-spacing-2" href={to}>
+      <Link to={to} className="ff-sans-cond uppercase text-white letter-spacing-2">
         <span>{number}</span>
         {text}
-      </a>
+      </Link>
     </li>
   )
 }

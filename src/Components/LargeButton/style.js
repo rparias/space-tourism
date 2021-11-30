@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const LargeButtonContainer = styled.a`
   position: relative;
-  display: grid;
+  display: inline-grid;
   z-index: 1;
   place-items: center;
   padding: 0 2em;

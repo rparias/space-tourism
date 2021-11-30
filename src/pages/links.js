@@ -2,25 +2,25 @@ export const links = [
   {
     text: 'Home',
     number: '01',
-    to: '#/',
+    to: '/',
     active: true
   },
   {
     text: 'Destination',
     number: '02',
-    to: '#/',
+    to: '/destination',
     active: false
   },
   {
     text: 'Crew',
     number: '03',
-    to: '#/',
+    to: '/crew',
     active: false
   },
   {
     text: 'Technology',
     number: '04',
-    to: '#/',
+    to: '/technology',
     active: false
   }
 ]
