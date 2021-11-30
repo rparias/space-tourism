@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.js": "/space-tourism/static/js/main.6769d381.chunk.js",
-    "main.js.map": "/space-tourism/static/js/main.6769d381.chunk.js.map",
+    "main.js": "/space-tourism/static/js/main.6e03afc2.chunk.js",
+    "main.js.map": "/space-tourism/static/js/main.6e03afc2.chunk.js.map",
     "runtime-main.js": "/space-tourism/static/js/runtime-main.058aad95.js",
     "runtime-main.js.map": "/space-tourism/static/js/runtime-main.058aad95.js.map",
-    "static/js/2.b98755e9.chunk.js": "/space-tourism/static/js/2.b98755e9.chunk.js",
-    "static/js/2.b98755e9.chunk.js.map": "/space-tourism/static/js/2.b98755e9.chunk.js.map",
+    "static/js/2.10e0a38e.chunk.js": "/space-tourism/static/js/2.10e0a38e.chunk.js",
+    "static/js/2.10e0a38e.chunk.js.map": "/space-tourism/static/js/2.10e0a38e.chunk.js.map",
     "static/js/3.2911e9e7.chunk.js": "/space-tourism/static/js/3.2911e9e7.chunk.js",
     "static/js/3.2911e9e7.chunk.js.map": "/space-tourism/static/js/3.2911e9e7.chunk.js.map",
     "index.html": "/space-tourism/index.html",
-    "static/js/2.b98755e9.chunk.js.LICENSE.txt": "/space-tourism/static/js/2.b98755e9.chunk.js.LICENSE.txt"
+    "static/js/2.10e0a38e.chunk.js.LICENSE.txt": "/space-tourism/static/js/2.10e0a38e.chunk.js.LICENSE.txt",
+    "static/media/logo.565f7f2c.svg": "/space-tourism/static/media/logo.565f7f2c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.058aad95.js",
-    "static/js/2.b98755e9.chunk.js",
-    "static/js/main.6769d381.chunk.js"
+    "static/js/2.10e0a38e.chunk.js",
+    "static/js/main.6e03afc2.chunk.js"
   ]
 }
