@@ -74,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
 
   /* make images easier to work with */
   img,
-  picutre {
+  picture {
     max-width: 100%;
     display: block;
   }
