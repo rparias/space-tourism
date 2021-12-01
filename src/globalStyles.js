@@ -126,6 +126,22 @@ const GlobalStyle = createGlobalStyle`
     max-width: 80rem;
   }
 
+  .grid-container {
+    display: grid;
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
+
+    > *:first-child {
+      grid-column: 2;
+      outline: 1px solid red;
+    }
+
+    > *:last-child {
+      grid-column: 3;
+      outline: 1px solid yellow;
+    }
+  }
+
   /* screen reader only */
   .sr-only {
     position: absolute;
