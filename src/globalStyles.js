@@ -139,6 +139,10 @@ const GlobalStyle = createGlobalStyle`
     gap: var(--gap, 1rem);
   }
 
+  .d-block {
+    display: block;
+  }
+
   .flow > *:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1rem);
     outline: 1px solid red;
