@@ -11,7 +11,7 @@ const Home = () => {
         <div>
           <Logo alt="space tourism logo" className="logo" />
         </div>
-        <PrimaryNavigation links={links} />
+        {/* <PrimaryNavigation links={links} /> */}
       </header>
 
       <div className="grid-container">

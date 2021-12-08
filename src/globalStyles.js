@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     --clr-white: 0 0% 100%;
 
     /* font-sizes */
-    --fs-900: 9.375rem;
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
     --fs-800: 6.25rem;
     --fs-700: 3.5rem;
     --fs-600: 2rem;
@@ -25,6 +25,27 @@ const GlobalStyle = createGlobalStyle`
     --ff-serif: "Bellefair", serif;
     --ff-sans-cond: "Barlow Condensed", sans-serif;
     --ff-sans-normal: "Barlow", sans-serif;
+  }
+
+  /* tablet sizes */
+  @media (min-width: 35em) {
+    :root {
+      --fs-800: 5rem;
+      --fs-700: 2.5rem;
+      --fs-600: 1.5rem;
+      --fs-400: 1rem;
+    }
+  }
+
+  /* desktop sizes */
+  @media (min-width: 45em) {
+    :root {
+      /* font-sizes */
+      --fs-800: 6.25rem;
+      --fs-700: 3.5rem;
+      --fs-600: 2rem;
+      --fs-400: 1.125rem;
+    }
   }
 
   /* ------------------- */
@@ -133,7 +154,7 @@ const GlobalStyle = createGlobalStyle`
     border: 5px solid limegreen;
     display: grid;
 
-    @media (min-width: 45rem) {
+    @media (min-width: 45em) {
       column-gap: var(--container-gap, 2rem);
       grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
 
